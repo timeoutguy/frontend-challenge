@@ -1,24 +1,15 @@
+import Header from './components/Header';
 import logo from './logo.svg';
-import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Header/>
+      <div className="flex flex-col px-64 mt-24 justify-center center">
+        <p className="text-justify text-lg text-gray-900"> Ea amet non minim pariatur proident ipsum quis fugiat esse irure velit. Duis laborum Lorem amet officia anim. Ipsum commodo id et voluptate excepteur est fugiat minim fugiat ut voluptate ad fugiat.</p>
+        <input className="mt-8 border border-gray-600 rounded p-2" type="text" placeholder="Searching"/>
+      </div>
+    </>
   );
 }
 
