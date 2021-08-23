@@ -3,7 +3,7 @@ import React from 'react';
 export default function Pagination({ paginate }) {
   const pageNumbers = [];
 
-  for (let i = 1; i <= Math.ceil(50 / 10); i++) {
+  for (let i = 1; i <= Math.ceil(50 / 10); i += 1) {
     pageNumbers.push(i);
   }
 

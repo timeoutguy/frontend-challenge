@@ -18,8 +18,7 @@ function App() {
     const value = search.toLowerCase();
     let result = [];
 
-    result = data.filter((data) => data.name.first.toLowerCase().search(value) != -1
-      || data.name.last.toLowerCase().search(value) != -1);
+    result = data.filter((user) => user.name.first.concat(' ', user.name.last).toLowerCase().search(value) !== -1);
 
     setDataFiltered(result);
   }, [search]);

@@ -1,3 +1,5 @@
+/* eslint-disable jsx-a11y/no-noninteractive-element-interactions */
+/* eslint-disable jsx-a11y/click-events-have-key-events */
 import React, { useState } from 'react';
 import moment from 'moment';
 import { IoMdFemale, IoMdMale } from 'react-icons/io';
@@ -26,7 +28,13 @@ export default function Table({ data }) {
 
   return (
     <>
-      {isModalOpen && <UserModal isModalOpen={isModalOpen} closeModal={closeModal} modalInfo={modalInfo} />}
+      {isModalOpen && (
+      <UserModal
+        isModalOpen={isModalOpen}
+        closeModal={closeModal}
+        modalInfo={modalInfo}
+      />
+      )}
       <table className="table-fixed mt-6 font-lg">
         <thead>
           <tr className="bg-purple-400">
