@@ -66,7 +66,11 @@ export default function Table({ data }) {
                 )}
               </td>
               <td className="p-2 border border-gray-600">{moment(user.dob.date).format('DD/MM/YYYY')}</td>
-              <td className="p-2 border border-gray-600 text-purple-500 font-bold" onClick={() => openModal(user)}> Visualizar mais </td>
+              <td className="p-2 border border-gray-600" onClick={() => openModal(user)}>
+                {' '}
+                <p className="text-purple-500 font-bold cursor-pointer"> Visualizar mais </p>
+                {' '}
+              </td>
             </tr>
           ))}
         </tbody>
